@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import s from './index.module.css'
 
-function Container ({children}){
+function Container ({children, width}){
     return (
-        <div className={s.container} >
+        <div className={s.container} style={{width: width ? width : ''}}>
          
 {children}
         </div>
@@ -14,6 +14,7 @@ function Container ({children}){
 
 Container.propTypes ={
     children: PropTypes.node.isRequired,
+    width: PropTypes.string
   
 };
 
