@@ -1,5 +1,6 @@
 import  {useEffect, useState }from 'react';
-import Container from '../../components/Container'
+import Container from '../../components/Container';
+import TodoForm from '../../components/TodoForm';
 import TodoItem from '../../components/TodoItem';
 import api from '../../api/server-api'
 
@@ -23,6 +24,7 @@ console.log(todos);
 
 return(
     <Container width="600px">
+        <TodoForm  />
    <ul >
     {todos.length > 0 && todos.map(todo => (
 <TodoItem  key={todo.id} {...todo}/>
