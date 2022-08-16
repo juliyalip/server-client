@@ -1,0 +1,10 @@
+.nav{
+    margin-right: 15px;
+    text-decoration: none;
+    color: black
+}
+.active{
+ composes: nav;
+    color: red
+}
+
